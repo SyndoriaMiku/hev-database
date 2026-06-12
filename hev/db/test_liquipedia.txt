@@ -1,0 +1,44 @@
+{{Match
+|opponent1={{TeamOpponent|Agfox|score=2}}
+|opponent2={{TeamOpponent|Nova eSports|score=1}}
+|date=2026-06-13 14:00
+|stage=Group Stage
+|map1={{Map
+  |winner=1
+  |length=18:42
+  |team1side=blue
+  |t1b1=Florentino |t1b2=Capheny |t1b3=D'Arcy |t1b4=Nakroth |t1b5=Omen
+  |t2b1=Hayate |t2b2=Tulen |t2b3=Cresht |t2b4=Elsu |t2b5=Liliana
+  |t1h1=Y'bneth |t1h2=Joker |t1h3=Baldum |t1h4=Krixi |t1h5=Zephys
+  |t2h1=Riktor |t2h2=Wonder Woman |t2h3=Elsu |t2h4=Lupin |t2h5=Tulen
+  |t1p1=Fly |t1p1k=5 |t1p1d=2 |t1p1a=8 |t1p1g=12000 |t1p1lane=clash
+  |t1p2=Garter |t1p2k=3 |t1p2d=1 |t1p2a=9 |t1p2g=11000 |t1p2lane=jungle
+  |t1p3=Cat |t1p3k=4 |t1p3d=3 |t1p3a=5 |t1p3g=10500 |t1p3lane=mid
+  |t1p4=Dog |t1p4k=2 |t1p4d=0 |t1p4a=10 |t1p4g=14000 |t1p4lane=farm |t1p4mvp=true
+  |t1p5=Bird |t1p5k=0 |t1p5d=2 |t1p5a=12 |t1p5g=8000 |t1p5lane=roam
+  |t2p1=Lion |t2p1k=2 |t2p1d=4 |t2p1a=2 |t2p1g=10000 |t2p1lane=clash
+  |t2p2=Tiger |t2p2k=1 |t2p2d=3 |t2p2a=3 |t2p2g=9500 |t2p2lane=jungle
+  |t2p3=Bear |t2p3k=3 |t2p3d=2 |t2p3a=1 |t2p3g=11000 |t2p3lane=mid
+  |t2p4=Wolf |t2p4k=2 |t2p4d=4 |t2p4a=2 |t2p4g=11500 |t2p4lane=farm
+  |t2p5=Fox |t2p5k=0 |t2p5d=5 |t2p5a=2 |t2p5g=7000 |t2p5lane=roam
+}}
+|map2={{Map
+  |winner=2
+  |length=15:30
+  |team1side=red
+  |t1b1=Florentino |t1b2=Capheny |t1b3=D'Arcy |t1b4=Nakroth |t1b5=Omen
+  |t2b1=Hayate |t2b2=Tulen |t2b3=Cresht |t2b4=Elsu |t2b5=Liliana
+  |t1h1=Riktor |t1h2=Wonder Woman |t1h3=Elsu |t1h4=Lupin |t1h5=Tulen
+  |t2h1=Y'bneth |t2h2=Joker |t2h3=Baldum |t2h4=Krixi |t2h5=Zephys
+  |t1p1=Fly |t1p1k=1 |t1p1d=4 |t1p1a=2 |t1p1g=9800 |t1p1lane=clash
+  |t1p2=Garter |t1p2k=2 |t1p2d=5 |t1p2a=1 |t1p2g=9500 |t1p2lane=jungle
+  |t1p3=Cat |t1p3k=3 |t1p3d=3 |t1p3a=2 |t1p3g=10200 |t1p3lane=mid
+  |t1p4=Dog |t1p4k=4 |t1p4d=2 |t1p4a=1 |t1p4g=12000 |t1p4lane=farm
+  |t1p5=Bird |t1p5k=0 |t1p5d=6 |t1p5a=3 |t1p5g=7200 |t1p5lane=roam
+  |t2p1=Lion |t2p1k=4 |t2p1d=2 |t2p1a=6 |t2p1g=12500 |t2p1lane=clash
+  |t2p2=Tiger |t2p2k=3 |t2p2d=1 |t2p2a=8 |t2p2g=11200 |t2p2lane=jungle |t2p2mvp=true
+  |t2p3=Bear |t2p3k=5 |t2p3d=1 |t2p3a=5 |t2p3g=11500 |t2p3lane=mid
+  |t2p4=Wolf |t2p4k=2 |t2p4d=3 |t2p4a=7 |t2p4g=13500 |t2p4lane=farm
+  |t2p5=Fox |t2p5k=1 |t2p5d=3 |t2p5a=10 |t2p5g=8500 |t2p5lane=roam
+}}
+}}
