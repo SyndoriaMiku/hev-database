@@ -34,7 +34,8 @@ class ESportsAPITests(APITestCase):
             duration="18:42",
             blue_side_team=self.team1,
             red_side_team=self.team2,
-            winner_side=SideChoice.BLUE
+            winner_side=SideChoice.BLUE,
+            mvp_player=self.player1
         )
         
         # Create drafts
@@ -46,7 +47,6 @@ class ESportsAPITests(APITestCase):
             action_type=DraftChoice.BAN
         )
         
-        # Create lineups
         self.lineup1 = GameLineup.objects.create(
             game=self.game,
             player=self.player1,
@@ -54,9 +54,7 @@ class ESportsAPITests(APITestCase):
             lane=LaneChoice.CLASH,
             kills=5,
             deaths=2,
-            assists=8,
-            gold=12000,
-            is_mvp=True
+            assists=8
         )
 
     def test_list_endpoints(self):
@@ -85,12 +83,12 @@ class ESportsAPITests(APITestCase):
         self.assertEqual(draft['team_name'], "Agfox")
         self.assertEqual(draft['action_type'], "BAN")
         
+        self.assertEqual(data['mvp_player_ign'], "Fly")
         lineup = data['blue_lineup'][0]
         self.assertEqual(lineup['player_ign'], "Fly")
         self.assertEqual(lineup['hero_name'], "Tulen")
         self.assertEqual(lineup['lane'], "CLASH")
         self.assertEqual(lineup['kills'], 5)
-        self.assertTrue(lineup['is_mvp'])
 
     def test_match_nested_detail(self):
         url = reverse('match-detail', kwargs={'pk': self.match.pk})

@@ -139,8 +139,6 @@ class GameLineup(models.Model):
     kills = models.IntegerField(default=0, verbose_name='Kills')
     deaths = models.IntegerField(default=0, verbose_name='Deaths')
     assists = models.IntegerField(default=0, verbose_name='Assists')
-    gold = models.IntegerField(default=0, verbose_name='Gold')
-    is_mvp = models.BooleanField(default=False, verbose_name='Is MVP')
 
     class Meta:
         verbose_name = 'Game Lineup'

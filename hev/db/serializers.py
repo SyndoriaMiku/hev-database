@@ -43,7 +43,7 @@ class GameLineupSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = GameLineup
-        fields = ['id', 'game', 'player', 'player_ign', 'hero', 'hero_name', 'lane', 'kills', 'deaths', 'assists', 'gold', 'is_mvp']
+        fields = ['id', 'game', 'player', 'player_ign', 'hero', 'hero_name', 'lane', 'kills', 'deaths', 'assists']
 
 
 class GameSerializer(serializers.ModelSerializer):

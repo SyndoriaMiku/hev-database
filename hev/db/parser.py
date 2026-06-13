@@ -305,7 +305,6 @@ def ingest_game(match, game_number, game_params, team1, team2):
         kills = int(game_params.get(f"t1p{i}k", 0))
         deaths = int(game_params.get(f"t1p{i}d", 0))
         assists = int(game_params.get(f"t1p{i}a", 0))
-        gold = int(game_params.get(f"t1p{i}g", 0))
         is_mvp = game_params.get(f"t1p{i}mvp", 'false').lower() == 'true'
         
         lineup_entry = GameLineup.objects.create(
@@ -315,9 +314,7 @@ def ingest_game(match, game_number, game_params, team1, team2):
             lane=lane,
             kills=kills,
             deaths=deaths,
-            assists=assists,
-            gold=gold,
-            is_mvp=is_mvp
+            assists=assists
         )
         if is_mvp:
             mvp_player_obj = player_obj
@@ -350,7 +347,6 @@ def ingest_game(match, game_number, game_params, team1, team2):
         kills = int(game_params.get(f"t2p{i}k", 0))
         deaths = int(game_params.get(f"t2p{i}d", 0))
         assists = int(game_params.get(f"t2p{i}a", 0))
-        gold = int(game_params.get(f"t2p{i}g", 0))
         is_mvp = game_params.get(f"t2p{i}mvp", 'false').lower() == 'true'
         
         lineup_entry = GameLineup.objects.create(
@@ -360,9 +356,7 @@ def ingest_game(match, game_number, game_params, team1, team2):
             lane=lane,
             kills=kills,
             deaths=deaths,
-            assists=assists,
-            gold=gold,
-            is_mvp=is_mvp
+            assists=assists
         )
         if is_mvp:
             mvp_player_obj = player_obj

@@ -26,7 +26,7 @@ class GameDraftInline(admin.TabularInline):
 class GameLineupInline(admin.TabularInline):
     model = GameLineup
     extra = 10
-    fields = ('player', 'hero', 'lane', 'kills', 'deaths', 'assists', 'gold', 'is_mvp')
+    fields = ('player', 'hero', 'lane', 'kills', 'deaths', 'assists')
 
 
 # --- Model Admins ---
@@ -83,6 +83,6 @@ class GameDraftAdmin(admin.ModelAdmin):
 
 @admin.register(GameLineup)
 class GameLineupAdmin(admin.ModelAdmin):
-    list_display = ('game', 'player', 'hero', 'lane', 'kills', 'deaths', 'assists', 'gold', 'is_mvp')
-    list_filter = ('lane', 'is_mvp')
+    list_display = ('game', 'player', 'hero', 'lane', 'kills', 'deaths', 'assists')
+    list_filter = ('lane',)
     search_fields = ('game__match__home_team_ref__name', 'game__match__away_team_ref__name', 'player__ign', 'hero__name_ppl')
